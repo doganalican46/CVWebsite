@@ -1,0 +1,81 @@
+Personal Website
+-----------------
+
+<<<Programming Languages and Tools<<<
+
+*HTML/CSS
+*PHPmyAdmin
+*JavaScript
+*XAMPP
+*MySql
+
+
+<<<Interfaces<<<
+
+1.Homepage
+	*Navbar:
+		-Picture
+		-Social Media Accounts
+			+LinkedIn
+			+Git-Hub
+			+Instagram
+			+Twitter
+		-Menu Names
+			+Homepage
+			+CV
+			+Blog
+			+Contact
+	*h1 Page name
+	*Short text about me
+	*Contact now button
+	*Download cv button
+
+2.CV and Personal Information
+	*h1 Page name
+	*CV information
+	*Download cv button
+
+3.My Blog
+	*h1 Page name
+	*Blog images and texts
+	*Above the blog images and texts there is a read more button
+
+4.Contact
+	*h1 Page name
+	*input boxes for name and e mail
+	*message box
+	*send e-mail button
+
+
+
+<<<Actions<<<
+
+
+1.Homepage Actions:
+	*When you click download CV button, browseer will start download proccess automatically
+	*When you click contact now button, contact page will open
+
+2.CV Page Actions:
+	*When you click download CV button, browseer will start download proccess automatically
+	
+3.My Blog Actions:
+	*When you click blog pictures, texts or read more button, blog content is shown in a popup
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
