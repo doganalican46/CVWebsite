@@ -129,31 +129,7 @@
     }
 
 
-    @media (max-width:991px) {
-        html {
-            font-size: 55%;
-        }
 
-        body.active {
-            padding-left: 0;
-        }
-    }
-
-    @media (max-width:450px) {
-        html {
-            font-size: 50%;
-        }
-
-        .header.active {
-            padding-top: 7rem;
-        }
-
-        #menu-btn.fa-times {
-            right: 0;
-
-        }
-
-    }
 
     section {
         padding: 3rem 2rem;
@@ -213,7 +189,7 @@
         padding: 1rem 3rem;
         border: var(--border-light);
 
-        font-size: 2rem;
+        font-size: 2.5rem;
 
     }
 
@@ -225,6 +201,85 @@
     .home .image img {
         height: auto;
         width: 100%;
+    }
+
+    .heading {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .heading span {
+        text-transform:none;
+        font-size: 5.5rem;
+        border-bottom: var(--border-bold);
+    }
+
+
+    .about .biography p {
+        margin: 2rem auto;
+        max-width: 70rem;
+        line-height: 2;
+        font-size: 1.7rem;
+    }
+
+    .about .biography .bio {
+        margin: 1rem 0;
+
+    }
+
+    .about .biography .bio h3 {
+        padding: 1rem 2rem;
+        display: inline-block;
+        margin: 1rem;
+        background-color: var(--light-bg);
+        border: var(--border-light);
+        word-break: break-all;
+        font-size: 1.7rem;
+        font-weight: normal;
+        text-transform: none;
+    }
+
+    .about .biography .bio h3 span {
+        font-weight: lighter;
+        text-transform: none;
+    }
+
+
+
+
+    @media (max-width:991px) {
+        html {
+            font-size: 55%;
+        }
+
+        body.active {
+            padding-left: 0;
+        }
+    }
+
+    @media (max-width:450px) {
+        html {
+            font-size: 50%;
+        }
+
+        .header.active {
+            padding-top: 7rem;
+        }
+
+        #menu-btn.fa-times {
+            right: 0;
+
+        }
+
+        .heading span {
+
+            font-size: 4rem;
+
+        }
+
+        .about .biography .bio h3 {
+            font-size: 2rem;
+        }
     }
 </style>
 
@@ -249,23 +304,23 @@
         </div>
 
         <nav class="navbar">
-            <a href="homepage.php" class="active">HOME</a>
-            <a href="about.php">ABOUT</a>
-            <a href="cvpage.php">PORTFOLIO</a>
-            <a href="contact.php">CONTACT</a>
+            <a href="#home" class="active">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">CONTACT</a>
         </nav>
 
         <div class="follow">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
+            <a href="https://www.facebook.com/doganalican46" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/can_dgn46" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/can.dgn.46/" class="fab fa-instagram"></a>
             <a href="https://www.linkedin.com/in/ali-can-dogan46/" class="fab fa-linkedin"></a>
-            <a href="#" class="fab fa-github"></a>
+            <a href="https://github.com/alleycan" class="fab fa-github"></a>
         </div>
     </header>
     <!-- header section ends -->
 
-    
+
     <!-- home section starts -->
     <section class="home" id="home">
         <div class="image">
@@ -285,6 +340,37 @@
     <!-- home section ends -->
 
 
+
+
+    <!-- about section starts -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"><span>Biography</span></h1>
+
+        <div class="biography">
+            <p>Hi, my name is Ali Can Dogan and I'm 22 years old. I live in Kahramanmaras/Turkey. <br>
+                Currently I am a student at European University of Lefke in North Cyprus. <br>
+                My department is Software Engineering and this is my senior class. <br>
+                I really like programming and I am interested in web development. <br>
+                Also I love playing football, watching TV series and hiking</p>
+            <div class="bio">
+                <h3><span>Name : <span>Ali Can Dogan</span></span></h3>
+                <h3><span>E-Mail : <span>doganalican46@hotmail.com</span></span></h3>
+                <h3><span>Address : <span>Pazarcık / Kahramanmaraş</span></span></h3>
+                <h3><span>Phone : <span>+90 545 714 53 05</span></span></h3>
+                <h3><span>Age : <span>22 Years</span></span></h3>
+                <h3><span>Experience: <span>6+ Months</span></span></h3>
+            </div>
+
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+
+
+    </section>
+
+    <!-- about section ends -->
 
 
 
