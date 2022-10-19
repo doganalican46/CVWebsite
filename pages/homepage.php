@@ -371,6 +371,48 @@
     }
 
 
+    .contact form {
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+
+    .contact form .box {
+        width: 100%;
+        padding: 1.4rem;
+        font-size: 2rem;
+        text-transform: none;
+        border: var(--border-light);
+        margin: 1rem 0;
+    }
+
+    .contact form textarea {
+        height: 20rem;
+        resize: none;
+    }
+
+    .contact form .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact form .flex .box{
+        width: 49½;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -659,6 +701,27 @@
 
     </section>
     <!-- portfolio section ends -->
+
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+
+        <h1 class="heading"><span>Contact Me</span></h1>
+        <form action="" method="post">
+            <div class="flex">
+                <input type="text" name="name" placeholder="Enter your name" class="box" required>
+                <input type="email" name="email" placeholder="Enter your E-mail" class="box" required>
+            </div>
+
+            <input type="number" min="0" name="number" placeholder="Enter your number" class="box" required>
+            <textarea name="message" class="box" required placeholder="Enter your message" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="SEND MESSAGE" class="btn" name="send">
+
+        </form>
+
+    </section>
+    <!-- contact section ends -->
 
 
 
