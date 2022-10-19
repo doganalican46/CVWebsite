@@ -209,7 +209,7 @@
     }
 
     .heading span {
-        text-transform:none;
+        text-transform: none;
         font-size: 5.5rem;
         border-bottom: var(--border-bold);
     }
@@ -244,9 +244,65 @@
         text-transform: none;
     }
 
+    .about .skills {
+        margin: 3rem 0;
 
+    }
 
+    .about .skills .progress {
+        margin-top: 1rem;
+    }
 
+    .about .skills .progress .bar {
+        margin: 1rem auto;
+        max-width: 70rem;
+        border: var(--border-bold);
+        padding: 1rem;
+    }
+
+    .about .skills .progress .bar span {
+
+        font-weight: normal;
+
+    }
+
+    .about .skills .progress .bar h3 {
+
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        padding: 2rem;
+        justify-content: space-between;
+        background-color: var(--yellow);
+    }
+
+    .about .skills .progress .bar:nth-child(1) h3{
+        width: 95%;
+    }
+    
+    .about .skills .progress .bar:nth-child(2) h3{
+        width: 70%;
+    }
+    
+    .about .skills .progress .bar:nth-child(3) h3{
+        width: 90%;
+    }
+    
+    .about .skills .progress .bar:nth-child(4) h3{
+        width: 60%;
+    }
+    
+    .about .skills .progress .bar:nth-child(5) h3{
+        width: 80%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     @media (max-width:991px) {
         html {
             font-size: 55%;
@@ -358,7 +414,7 @@
                 <h3><span>Name : <span>Ali Can Dogan</span></span></h3>
                 <h3><span>E-Mail : <span>doganalican46@hotmail.com</span></span></h3>
                 <h3><span>Address : <span>Pazarcık / Kahramanmaraş</span></span></h3>
-                <h3><span>Phone : <span>+90 545 714 53 05</span></span></h3>
+                <h3><span>Phone : <span><a href="tel:">+90 545 714 53 05</a></span></span></h3>
                 <h3><span>Age : <span>22 Years</span></span></h3>
                 <h3><span>Experience: <span>6+ Months</span></span></h3>
             </div>
@@ -366,7 +422,29 @@
             <a href="#" class="btn">Download CV</a>
         </div>
 
+        <div class="skills">
 
+            <h1 class="heading"><span>SKILSS</span></h1>
+
+            <div class="progress">
+                <div class="bar">
+                    <h3><span>HTML</span> <span>95%</span></h3>
+                </div>
+                <div class="bar">
+                    <h3><span>CSS</span> <span>70%</span></h3>
+                </div>
+                <div class="bar">
+                    <h3><span>C/C++</span> <span>90%</span></h3>
+                </div>
+                <div class="bar">
+                    <h3><span>PYTHON</span> <span>60%</span></h3>
+                </div>
+                <div class="bar">
+                    <h3><span>JAVA</span> <span>80%</span></h3>
+                </div>
+
+            </div>
+        </div>
 
     </section>
 
