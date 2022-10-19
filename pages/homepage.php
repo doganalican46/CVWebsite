@@ -396,15 +396,21 @@
         justify-content: space-between;
     }
 
-    .contact form .flex .box{
+    .contact form .flex .box {
         width: 49½;
     }
 
+    .credit {
+        text-align: center;
+        background-color: var(--black);
+        padding: 3rem;
+        font-size: 2rem;
+        color: var(--white);
+    }
 
-
-
-
-
+    .credit span {
+        color: var(--yellow);
+    }
 
 
 
@@ -453,6 +459,11 @@
         .about .biography .bio h3 {
             font-size: 2rem;
         }
+
+
+        .contact form .flex .box {
+            width: 100%;
+        }
     }
 </style>
 
@@ -473,14 +484,14 @@
         <div id="menu-btn" class="fas fa-bars"></div>
 
         <div class="logo">
-            <a href="#">PORTFOLIO</a>
+            <a href="#">PORTFOLIO WEB SITE</a>
         </div>
 
         <nav class="navbar">
             <a href="#home" class="active">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#">PORTFOLIO</a>
-            <a href="#">CONTACT</a>
+            <a href="#about">ABOUT ME</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#contact">CONTACT</a>
         </nav>
 
         <div class="follow">
@@ -724,6 +735,23 @@
     <!-- contact section ends -->
 
 
+    <div class="credit">&copy; Copyright @<?php echo date('Y'); ?> by <span>Ali Can Doğan</span> ?></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -747,6 +775,22 @@
                 document.body.classList.remove('active');
             }
         }
+
+        document.querySelectorAll('section').forEach(sec => {
+            let top = window.scrollY;
+            let offset = sec.offsetTop - 150;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
+
+            if (top >= offset && top < offset + height) {
+                document.querySelectorAll('.header .navbar a').forEach(links => {
+                    links.classList.remove('active');
+                    document.querySelector('.header .navbar a[href*=' + id + ']').classList.add('active');
+                });
+            };
+
+
+        });
     </script>
 </body>
 
