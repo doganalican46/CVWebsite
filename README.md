@@ -1,7 +1,5 @@
-# Personal Website
+# CV PORTFOLIO WEBSITE EXAMPLE 
 ___________________________________________________________________________________________________________________
-
-This project will be my personal website. I will update and share the last version of the website.
 
 ### Objective:
 To develop a personal portfolio website with PHP.
